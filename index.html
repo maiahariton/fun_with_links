@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test - Maia Hariton</title>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("open").onclick = function () {
+                window.open('https://www.google.com', 'hello', 'width=2300, height=2300, resizable=yes');
+            };
+
+            var a = document.getElementById('open');
+            a.addEventListener('click', function () {
+                a.style.opacity = 0;
+            });
+        };
+    </script>
+
+    <style>
+        a {
+            width: 200px;
+            height: 200px;
+            background-color: #CCF9F9;
+            color: #62462B;
+            display: block;
+            padding: 20px;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box; /* Opera/IE 8+ */
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<a id="open">Click me!</a>
+
+</body>
+</html>
